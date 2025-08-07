@@ -1,0 +1,25 @@
+{
+  "name": "@nuxtjs-tailwindcss/dark-mode",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/ui": "^3.2.0",
+    "@nuxtjs/color-mode": "latest",
+    "@nuxtjs/tailwindcss": "latest",
+    "embla-carousel-auto-scroll": "^8.6.0",
+    "nuxt": "latest",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "@iconify/json": "^2.2.359",
+    "@iconify/tailwind4": "^1.0.6",
+    "@nuxt/icon": "^1.15.0"
+  }
+}

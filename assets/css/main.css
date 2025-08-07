@@ -1,0 +1,84 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+.outline {
+  position: relative;
+  overflow: hidden;
+}
+
+.lines{
+  position: absolute;
+}
+
+
+.top {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.right {
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+
+.bottom {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+
+.left{
+  bottom: 0;
+  left: 0;
+  height: 100%;
+
+}
+
+
+.outline:hover .top {
+  height: 2px;
+  animation: slide-right 4s linear infinite;
+}
+.outline:hover .right {
+  width: 2px;
+  animation: slide-down 4s linear infinite 1s;
+}
+.outline:hover .bottom {
+  height: 2px;
+  animation: slide-left 4s linear infinite 2s;
+}
+.outline:hover .left {
+  width: 2px;
+  animation: slide-up 4s linear infinite 3s;
+}
+
+
+
+@keyframes slide-right {
+  0%   { transform: translateX(-100%); }
+  50%  { transform: translateX(100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes slide-down {
+  0%   { transform: translateY(-100%); }
+  50%  { transform: translateY(100%); }
+  100% { transform: translateY(100%); }
+}
+
+@keyframes slide-left {
+  0%   { transform: translateX(100%); }
+  50%  { transform: translateX(-100%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes slide-up {
+  0%   { transform: translateY(100%); }
+  50%  { transform: translateY(-100%); }
+  100% { transform: translateY(-100%); }
+}
