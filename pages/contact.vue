@@ -1,3 +1,44 @@
+<script lang="ts" setup>
+import emailjs from '@emailjs/browser'
+
+const name = ref("");
+const email = ref("");
+const phone = ref("");
+const subject = ref("");
+const message = ref("");
+
+async function submit(e: Event) {
+      try {
+      const result = await emailjs.send(
+        'service_3zjnncq',
+        'template_3zjnncq',
+        {
+          user_name: name.value,
+          message: `From: ${name.value} \n Email: ${email.value} \n Subject: ${subject.value} \n Phone: ${phone.value} \n Message: ${message.value}  `
+        },
+        'dyWC_ssN_uB_gK9jg'
+      )
+      
+      await emailjs.send(
+        'service_3zjnncq',
+        'template_40xi89a',
+        {
+          email: email.value,
+          name: name.value,
+          title: subject.value
+        },
+        'dyWC_ssN_uB_gK9jg'
+      )
+
+    alert('Form completed successfully!')
+  } catch (error) {
+    alert('Failed to send message.')
+  }
+}
+
+</script>
+
+
 <template>
   <div class="pt-20 flex flex-col gap-5" >
     <section class="flex  flex-col">
@@ -24,33 +65,38 @@
 
       <div class="flex flex-col items-center p-3">
          <a href="https://calendar.app.google/Np9dHHWUCRPC2uVS8">
-            <button class="rounded-3xl p-1 border-1 w-40 h-15 mr-3.5 mb-6"> Schedule a meeting</button>
+            <button class="outline rounded-3xl p-1 border-1 w-40 h-15 mr-3.5 mb-6 relative hover:scale-115">
+              <span class="top lines  bg-gray-500 dark:bg-amber-50"></span>
+              <span class="left lines bg-gray-500 dark:bg-amber-50"></span>
+              <span class="bottom lines bg-gray-500 dark:bg-amber-50"></span>
+              <span class="right lines bg-gray-500 dark:bg-amber-50"> </span>
+              Schedule a meeting
+            </button>
         </a>
 
         
 
-        <form class="flex sm:w-150 w-full flex-col gap-3">
+        <form @submit.prevent="submit" class="flex sm:w-150 w-full flex-col gap-3">
             <div class="flex content-center items-center gap-1">
                 <label class="">Name</label>
                 <span class=" text-red-600">*</span>             
             </div>
             <div class="relative inline-flex items-center w-full">
-              <input type="text" name="name" placeholder="johndoe@gmail.com" class="w-full h-10 rounded-md p-2 placeholder:text-d border-1 border-gray-300">
+              <input required type="text" v-model="name" placeholder="johndoe@gmail.com" class="w-full h-10 rounded-md p-2 placeholder:text-d border-1 border-gray-300">
             </div>
 
             <div class="flex content-center items-center gap-1">
                 <label class="">Email</label>
                 <span class=" text-red-600">*</span>             </div>
             <div class="relative inline-flex items-center w-full">
-              <input type="text" name="email" placeholder="johndoe@gmail.com" class="w-full h-10 rounded-md p-2 placeholder:text-d border-1 border-gray-300">
+              <input required type="email" v-model="email" placeholder="johndoe@gmail.com" class="w-full h-10 rounded-md p-2 placeholder:text-d border-1 border-gray-300">
             </div>
 
             <div class="flex content-center items-center gap-1">
                 <label class="">Phone</label>         
             </div>
-
             <div class="relative inline-flex items-center w-full">
-              <input type="text" name="phone" placeholder="123 456 7890" class="w-full h-10 rounded-md p-2 placeholder:text-d border-1 border-gray-300">
+              <input type="tel" v-model="phone" placeholder="123 456 7890" class="w-full h-10 rounded-md p-2 placeholder:text-d border-1 border-gray-300">
             </div>
 
              <div class="flex content-center items-center gap-1">
@@ -58,7 +104,7 @@
                 <span class=" text-red-600">*</span>
             </div>
             <div class="relative inline-flex items-center w-full">
-              <input type="text" name="subject" placeholder="Subject of your message" class="w-full h-10 rounded-md p-2 placeholder:text-d border-1 border-gray-300">
+              <input required type="text" v-model="subject" placeholder="Subject of your message" class="w-full h-10 rounded-md p-2 placeholder:text-d border-1 border-gray-300">
             </div>
 
 
@@ -67,12 +113,15 @@
                 <span class=" text-red-600">*</span>
             </div>
             <div class="relative inline-flex items-center w-full">
-              <textarea type="text" name="message" placeholder="Subject of your message" class="w-full h-50 rounded-md p-2 placeholder:text-d border-1 border-gray-300" rows="5"> </textarea> 
+              <textarea required  type="text" v-model="message" placeholder="Your message" class="w-full h-50 rounded-md p-2 placeholder:text-d border-1 border-gray-300" rows="5"> </textarea> 
             </div>
 
 
-          <div class="flex justify-center mt-10"><button type="submit" data-state="closed" data-grace-area-trigger=""
-              class="rounded-md font-medium inline-flex items-center disabled:cursor-not-allowed aria-disabled:cursor-not-allowed disabled:opacity-75 aria-disabled:opacity-75 transition-colors cursor-pointer px-2.5 py-1.5 text-sm gap-1.5 w-full justify-center text-inverted bg-inverted hover:bg-inverted/90 disabled:bg-inverted aria-disabled:bg-inverted focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-inverted"><!---->Send<!----></button>
+          <div class="flex justify-center mt-10">
+            <button type="submit"
+              class="rounded-md font-medium inline-flex items-center disabled:cursor-not-allowed aria-disabled:cursor-not-allowed disabled:opacity-75 aria-disabled:opacity-75 transition-colors cursor-pointer px-2.5 py-1.5 text-sm gap-1.5 w-full justify-center text-inverted bg-inverted hover:bg-inverted/90 disabled:bg-inverted aria-disabled:bg-inverted focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-inverted">
+              Send
+            </button>
           </div>
         </form>
        
@@ -151,9 +200,6 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-
-</script>
 
 <style></style>
 

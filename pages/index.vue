@@ -5,7 +5,7 @@ const titles = [
   "Web Developer",
   "Tech Enthusiast",
   "Open Source Contributor",
-  "Thanks for visiting..."
+  "Thanks for stopping by..."
 ]
 
 const intro = "Hey, I'm Adriel Dube"
@@ -79,7 +79,7 @@ onMounted(async () => {
   </section>
 
 
-  <div class="flex flex-col flex-wrap  mt-4 justify-center items-center">
+  <div class="flex flex-col flex-wrap items-center">
           <button class="flex rounded-2xl p-2 items-center gap-2 relative">
             <span class="relative flex h-2 w-2">
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
@@ -104,21 +104,13 @@ onMounted(async () => {
 
         <div class="flex gap-5">
           <a href="https://nuxt.com">
-            <button class="outline flex border-2 rounded-2xl p-2 items-center relative">
-              <span class="top lines  bg-amber-50"></span>
-              <span class="left lines bg-amber-50"></span>
-              <span class="bottom lines bg-amber-50"></span>
-              <span class="right lines bg-amber-50"> </span>
+            <button class="outline flex border-2 rounded-2xl p-2 items-center relative hover:scale-105">
               Click here for resume
             </button>
           </a>
 
           <a href="https://calendar.app.google/Np9dHHWUCRPC2uVS8">
-            <button class="outline flex border-2 rounded-2xl p-2 items-center relative">
-              <span class="top lines  bg-amber-50"></span>
-              <span class="left lines bg-amber-50"></span>
-              <span class="bottom lines bg-amber-50"></span>
-              <span class="right lines bg-amber-50"> </span>
+            <button class="outline flex border-2 rounded-2xl p-2 items-center relative hover:scale-105">
               Schedule a meeting
             </button>
           </a>

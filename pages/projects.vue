@@ -8,7 +8,7 @@ const languages = ref([ "All",
 const project1 = ref(["Python", "HTML", "CSS", "AWS"]);
 const project2 = ref(["Vue.js", "Nuxt.js", "Tailwind", "JavaScript"]);
 const project3 = ref(["Swift", "AWS", "MySQL"]);
-const project4 = ref(["Flask", "Python", "MongoDB",]);
+const project4 = ref(["Flask", "Python", "MongoDB"]);
 
 
 const filterLang = ref("All");
@@ -23,7 +23,13 @@ const filter = (lang: string) => {
 <h1 class="pt-15 pb-4 text-5xl">Projects</h1>
   <div class="justify-items-center">
       <div class="relative gap-15 tech-stack overflow-x-auto whitespace-nowrap w-full">
-                <button @click="filter(lang)" :key="lang" v-for="lang of languages"class="rounded-3xl p-1 border-1 w-40 h-15 mr-3.5 mb-6"> {{lang}} </button>
+        <button   @click="filter(lang)" :key="lang" v-for="lang of languages" class="outline rounded-3xl p-1 border-1 w-40 h-15 my-6 mr-3.5 relative focus:border-3 focus:scale-110">
+              <span class="top lines  bg-gray-500 dark:bg-amber-50"></span>
+              <span class="left lines bg-gray-500 dark:bg-amber-50"></span>
+              <span class="bottom lines bg-gray-500 dark:bg-amber-50"></span>
+              <span class="right lines bg-gray-500 dark:bg-amber-50"> </span>
+              {{lang}}
+        </button>
       </div>
 
   <div class="lg:flex justify-center self-center w-full">
@@ -53,20 +59,20 @@ const filter = (lang: string) => {
 
         <div class="flex justify-self-center gap-5 py-2">
           <button class="outline rounded-2xl hover:scale-105  w-35">
-            <span class="top lines  bg-amber-50"></span>
-            <span class="left lines bg-amber-50"></span>
-            <span class="bottom lines bg-amber-50"></span>
-            <span class="right lines bg-amber-50"> </span>
+            <span class="top lines  bg-gray-500 dark:bg-amber-50"></span>
+            <span class="left lines bg-gray-500 dark:bg-amber-50"></span>
+            <span class="bottom lines bg-gray-500 dark:bg-amber-50"></span>
+            <span class="right lines bg-gray-500 dark:bg-amber-50"> </span>
 
             <!-- Icon -->
             <Icon name="mdi:video-youtube" size="60" />
           </button>
 
           <button class="outline rounded-2xl  w-35 hover:scale-105">
-              <span class="top lines  bg-amber-50"></span>
-              <span class="left lines bg-amber-50"></span>
-              <span class="bottom lines bg-amber-50"></span>
-              <span class="right lines bg-amber-50"> </span>
+              <span class="top lines  bg-gray-500 dark:bg-amber-50"></span>
+              <span class="left lines bg-gray-500 dark:bg-amber-50"></span>
+              <span class="bottom lines bg-gray-500 dark:bg-amber-50"></span>
+              <span class="right lines bg-gray-500 dark:bg-amber-50"> </span>
               <Icon name="octicon:mark-github-16" size="50" />
           </button>
         </div>
@@ -102,20 +108,20 @@ const filter = (lang: string) => {
 
         <div class="flex justify-self-center gap-5 py-2">
           <button class="outline rounded-2xl hover:scale-105  w-35">
-            <span class="top lines  bg-amber-50"></span>
-            <span class="left lines bg-amber-50"></span>
-            <span class="bottom lines bg-amber-50"></span>
-            <span class="right lines bg-amber-50"> </span>
+            <span class="top lines  bg-gray-500 dark:bg-amber-50"></span>
+            <span class="left lines bg-gray-500 dark:bg-amber-50"></span>
+            <span class="bottom lines bg-gray-500 dark:bg-amber-50"></span>
+            <span class="right lines bg-gray-500 dark:bg-amber-50"> </span>
 
             <!-- Icon -->
             <Icon name="mdi:video-youtube" size="60" />
           </button>
 
           <button class="outline rounded-2xl  w-35 hover:scale-105">
-              <span class="top lines  bg-amber-50"></span>
-              <span class="left lines bg-amber-50"></span>
-              <span class="bottom lines bg-amber-50"></span>
-              <span class="right lines bg-amber-50"> </span>
+              <span class="top lines  bg-gray-500 dark:bg-amber-50"></span>
+              <span class="left lines bg-gray-500 dark:bg-amber-50"></span>
+              <span class="bottom lines bg-gray-500 dark:bg-amber-50"></span>
+              <span class="right lines bg-gray-500 dark:bg-amber-50"> </span>
               <Icon name="octicon:mark-github-16" size="50" />
           </button>
         </div>
@@ -151,20 +157,20 @@ const filter = (lang: string) => {
 
           <div class="flex justify-self-center gap-5 py-2">
             <button class="outline rounded-2xl w-35 hover:scale-105">
-              <span class="top lines  bg-amber-50"></span>
-              <span class="left lines bg-amber-50"></span>
-              <span class="bottom lines bg-amber-50"></span>
-              <span class="right lines bg-amber-50"> </span>
+              <span class="top lines  bg-gray-500 dark:bg-amber-50"></span>
+              <span class="left lines bg-gray-500 dark:bg-amber-50"></span>
+              <span class="bottom lines bg-gray-500 dark:bg-amber-50"></span>
+              <span class="right lines bg-gray-500 dark:bg-amber-50"> </span>
 
               <!-- Icon -->
               <Icon name="mdi:video-youtube" size="60" />
             </button>
 
             <button class="outline rounded-2xl w-35 hover:scale-105">
-                <span class="top lines  bg-amber-50"></span>
-                <span class="left lines bg-amber-50"></span>
-                <span class="bottom lines bg-amber-50"></span>
-                <span class="right lines bg-amber-50"> </span>
+                <span class="top lines  bg-gray-500 dark:bg-amber-50"></span>
+                <span class="left lines bg-gray-500 dark:bg-amber-50"></span>
+                <span class="bottom lines bg-gray-500 dark:bg-amber-50"></span>
+                <span class="right lines bg-gray-500 dark:bg-amber-50"> </span>
                 <Icon name="octicon:mark-github-16" size="50" />
             </button>
       
@@ -203,20 +209,20 @@ const filter = (lang: string) => {
 
           <div class="flex justify-self-center gap-5 py-2">
             <button class="outline rounded-2xl hover:scale-105  w-35">
-              <span class="top lines  bg-amber-50"></span>
-              <span class="left lines bg-amber-50"></span>
-              <span class="bottom lines bg-amber-50"></span>
-              <span class="right lines bg-amber-50"> </span>
+              <span class="top lines  bg-gray-500 dark:bg-amber-50"></span>
+              <span class="left lines bg-gray-500 dark:bg-amber-50"></span>
+              <span class="bottom lines bg-gray-500 dark:bg-amber-50"></span>
+              <span class="right lines bg-gray-500 dark:bg-amber-50"> </span>
 
               <!-- Icon -->
               <Icon name="mdi:video-youtube" size="60" />
             </button>
 
             <button class="outline rounded-2xl  w-35 hover:scale-105">
-                <span class="top lines  bg-amber-50"></span>
-                <span class="left lines bg-amber-50"></span>
-                <span class="bottom lines bg-amber-50"></span>
-                <span class="right lines bg-amber-50"> </span>
+                <span class="top lines  bg-gray-500 dark:bg-amber-50"></span>
+                <span class="left lines bg-gray-500 dark:bg-amber-50"></span>
+                <span class="bottom lines bg-gray-500 dark:bg-amber-50"></span>
+                <span class="right lines bg-gray-500 dark:bg-amber-50"> </span>
                 <Icon name="octicon:mark-github-16" size="50" />
             </button>
       </div>

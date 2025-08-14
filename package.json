@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@nuxt/ui": "^3.2.0",
     "@nuxtjs/color-mode": "latest",
     "@nuxtjs/tailwindcss": "latest",
@@ -20,6 +21,7 @@
   "devDependencies": {
     "@iconify/json": "^2.2.359",
     "@iconify/tailwind4": "^1.0.6",
-    "@nuxt/icon": "^1.15.0"
+    "@nuxt/icon": "^1.15.0",
+    "@types/nodemailer": "^6.4.17"
   }
 }

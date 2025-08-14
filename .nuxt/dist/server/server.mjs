@@ -1,0 +1,1 @@
+export { default } from "file:///Users/adspc/PycharmProjects/Swift/Portfolio/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"

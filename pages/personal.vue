@@ -159,7 +159,7 @@
         Answers to common questions about my process and services
       </div>
           <details class="w-[80%] h-auto rounded-lg px-3 py-1" closed>
-            <summary class="list-none cursor-pointer">
+            <summary class="list-none cursor-pointer hover:scale-105">
               <div class="flex justify-between items-center h-12 p-4 bg-gray-400/25 dark:bg-gray-500/15 rounded-2xl">
                 <span class="">What services do you offer?</span>
                 <Icon name="ei:plus" size="32" />
@@ -171,7 +171,7 @@
           </details>
 
            <details class="w-[80%] h-auto rounded-lg px-3 py-1" closed>
-            <summary class="list-none cursor-pointer">
+            <summary class="list-none cursor-pointer hover:scale-105">
               <div class="flex justify-between items-center h-12 p-4 bg-gray-400/25 dark:bg-gray-500/15 rounded-2xl">
                 <span class="">Why is the sky blue?</span>
                 <Icon name="ei:plus" size="32" />
@@ -183,7 +183,7 @@
           </details>
 
            <details class="w-[80%] h-auto rounded-lg px-3 py-1" closed>
-            <summary class="list-none cursor-pointer">
+            <summary class="list-none cursor-pointer hover:scale-105">
               <div class="flex justify-between items-center h-12 p-4 bg-gray-400/25 dark:bg-gray-500/15 rounded-2xl">
                 <span class="">Why are you messaging me rn?</span>
                 <Icon name="ei:plus" size="32" />
@@ -192,10 +192,10 @@
             <div class="flex px-4">
               <p class=" text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum They should call it Roundtine.</p>
             </div>
-          </details>
+           </details>
 
           <details class="w-[80%] h-auto rounded-lg px-3 py-1" closed>
-            <summary class="list-none cursor-pointer">
+            <summary class="list-none cursor-pointer hover:scale-105">
               <div class="flex justify-between items-center h-12 p-4 bg-gray-400/25 dark:bg-gray-500/15 rounded-2xl">
                 <span class="">Hey now, what's wrong?</span>
                 <Icon name="ei:plus" size="32" />
