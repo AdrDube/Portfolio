@@ -183,12 +183,12 @@ onMounted(async () => {
       <p class="text-5xl">My Journey So Far</p>
 
       <div class="flex flex-col sm:flex-row justify-center items-center gap-10 p-2">
-            <div class="flex flex-col 2 border-b-amber-10 border-1 rounded-3xl w-4/5 sm:w-80 px-3 py-2 h-50 hover:scale-105">
+            <div class="flex flex-col 2 border-b-amber-10 border-1 rounded-3xl w-4/5 sm:w-80 px-3 py-2 h-50 hover:scale-105 transition duration-700 ease-in-out">
                         <Icon class="self-center" name="arcticons:autotools" size="80"/>
                         <h3 class="t-semibold">Experience</h3>
                         <p class="text-xl">2+ years <br> Software Development</p>
             </div>
-            <div class="flex flex-col 2 border-b-amber-10 border-1 rounded-3xl w-4/5 sm:w-80 px-3 py-2 h-50 hover:scale-105">
+            <div class="flex flex-col 2 border-b-amber-10 border-1 rounded-3xl w-4/5 sm:w-80 px-3 py-2 h-50 hover:scale-105 transition duration-700 ease-in-out">
                         <Icon class="self-center" name="arcticons:folder-school" size="80"/>
                         <h3 class="t-semibold">Education</h3>
                         <p class="text-xl">B.Sc Bachelors Degree (2027) <br>Computer Science & Cloud Computing</p>

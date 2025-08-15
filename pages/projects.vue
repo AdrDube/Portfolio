@@ -22,8 +22,8 @@ const filter = (lang: string) => {
 <template>
 <h1 class="pt-15 pb-4 text-5xl">Projects</h1>
   <div class="justify-items-center">
-      <div class="relative gap-15 tech-stack overflow-x-auto whitespace-nowrap w-full">
-        <button   @click="filter(lang)" :key="lang" v-for="lang of languages" class="outline rounded-3xl p-1 border-1 w-40 h-15 my-6 mr-3.5 relative focus:border-3 focus:scale-110">
+      <div class="relative gap-15 tech-stack overflow-x-auto whitespace-nowrap w-full no-scrollbar">
+        <button   @click="filter(lang)" :key="lang" v-for="lang of languages" class="outline rounded-3xl p-1 border-1 w-40 h-15 my-6 mr-3.5 relative focus:border-3 focus:scale-115 transition duration-700 ease-in-out">
               <span class="top lines  bg-gray-500 dark:bg-amber-50"></span>
               <span class="left lines bg-gray-500 dark:bg-amber-50"></span>
               <span class="bottom lines bg-gray-500 dark:bg-amber-50"></span>
@@ -34,7 +34,7 @@ const filter = (lang: string) => {
 
   <div class="lg:flex justify-center self-center w-full">
     <div id="left-col" class="flex flex-col gap-30 items-center justify-items-center">
-      <div id="Project1" v-if="filterLang==='All' || project1.includes(filterLang)" class="m-4 md:w-2/3 w-[80%] lg:w-[75%] hover:scale-105">
+      <div id="Project1" v-if="filterLang==='All' || project1.includes(filterLang)" class="m-4 md:w-2/3 w-[80%] lg:w-[75%] hover:scale-105 transition duration-500 ease-in-out">
         <div class="flex flex-col 2 border-b-amber-10 border-1 rounded-3xl overflow-hidden h-110">
 
           <div class="overflow-hidden">
@@ -79,7 +79,7 @@ const filter = (lang: string) => {
 
       </div>
 
-      <div id="Project2" v-if="filterLang==='All' || project2.includes(filterLang)"  class="m-4 md:w-2/3 w-[80%] lg:w-[75%] hover:scale-105">
+      <div id="Project2" v-if="filterLang==='All' || project2.includes(filterLang)"  class="m-4 md:w-2/3 w-[80%] lg:w-[75%] hover:scale-105 transition duration-500 ease-in-out">
         <div class="flex flex-col 2 border-b-amber-10 border-1 rounded-3xl overflow-hidden h-110">
 
           <div class="overflow-hidden">
@@ -134,7 +134,7 @@ const filter = (lang: string) => {
 
     <div id="right-col" class="flex flex-col gap-30 items-center justify-items-center mt-20">
 
-      <div id="Project3" v-if="filterLang==='All' || project3.includes(filterLang)" class="m-4 md:w-2/3 w-[80%] lg:w-[75%] hover:scale-105">
+      <div id="Project3" v-if="filterLang==='All' || project3.includes(filterLang)" class="m-4 md:w-2/3 w-[80%] lg:w-[75%] hover:scale-105 transition duration-700 ease-in-out">
           <div class="flex flex-col 2 border-b-amber-10 border-1 rounded-3xl overflow-hidden h-110 ">
 
             <div class="overflow-hidden">
@@ -179,7 +179,7 @@ const filter = (lang: string) => {
         </div>
 
 
-      <div id="Project4" v-if="filterLang==='All' || project4.includes(filterLang)" class="m-4 md:w-2/3 w-[80%] lg:w-[75%] hover:scale-105">
+      <div id="Project4" v-if="filterLang==='All' || project4.includes(filterLang)" class="m-4 md:w-2/3 w-[80%] lg:w-[75%] hover:scale-105 transition duration-700 ease-in-out">
           <div
           class="flex flex-col 2 border-b-amber-10 border-1 rounded-3xl overflow-hidden h-110">
 
@@ -242,4 +242,8 @@ const filter = (lang: string) => {
 
 
 
-<style></style>
+<style>
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+</style>
