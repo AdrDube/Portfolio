@@ -5,7 +5,8 @@ const name = ref("");
 const email = ref("");
 const phone = ref("");
 const subject = ref("");
-const message = ref("");
+const val = ref("");
+
 
 async function submit(e: Event) {
       try {
@@ -14,7 +15,7 @@ async function submit(e: Event) {
         'template_3zjnncq',
         {
           user_name: name.value,
-          message: `From: ${name.value} \n Email: ${email.value} \n Subject: ${subject.value} \n Phone: ${phone.value} \n Message: ${message.value}  `
+          message: `From: ${name.value} \n Email: ${email.value} \n Subject: ${subject.value} \n Phone: ${phone.value} \n Message: ${val.value}  `
         },
         'dyWC_ssN_uB_gK9jg'
       )
@@ -108,13 +109,21 @@ async function submit(e: Event) {
             </div>
 
 
-            <div class="flex content-center items-center gap-1">
-                <label class="">Message</label>
-                <span class=" text-red-600">*</span>
-            </div>
-            <div class="relative inline-flex items-center w-full">
-              <textarea required  type="text" v-model="message" placeholder="Your message" class="w-full h-50 rounded-md p-2 placeholder:text-d border-1 border-gray-300" rows="5"> </textarea> 
-            </div>
+              <div class="flex content-center items-center gap-1">
+                <label>Message</label>
+                <span class="text-red-600">*</span>
+              </div>
+
+              <textarea 
+                required 
+                v-model="val"
+                placeholder="Your message" 
+                class="w-full h-50 rounded-md p-2 placeholder:text-d border-1 border-gray-300" 
+                rows="5"
+                autocomplete="off"
+              ></textarea>
+
+        
 
 
           <div class="flex justify-center mt-10">

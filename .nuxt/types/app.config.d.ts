@@ -228,7 +228,8 @@ declare const inlineConfig = {
       "wi",
       "wpf",
       "zmdi",
-      "zondicons"
+      "zondicons",
+      "lineicons"
     ],
     "fetchTimeout": 1500
   }
