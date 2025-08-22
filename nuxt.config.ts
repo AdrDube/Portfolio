@@ -1,11 +1,8 @@
-import { SpeedInsights } from "@vercel/speed-insights/nuxt"
-
 export default defineNuxtConfig({
   compatibilityDate: '2025-08-22',
   modules: [
     '@nuxt/ui',
     '@nuxt/icon',
-    SpeedInsights
   ],
   css: ['~/assets/css/main.css'],
 
