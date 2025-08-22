@@ -65,7 +65,7 @@ async function submit(e: Event) {
 
       <div class="flex flex-col items-center p-3">
          <a href="https://calendar.app.google/Np9dHHWUCRPC2uVS8">
-            <button class="outline rounded-3xl p-1 border-1 w-40 h-15 mr-3.5 mb-6 relative hover:scale-115">
+            <button class="outline rounded-3xl p-1 border-1 w-40 h-15 mr-3.5 mb-6 relative hover:scale-115 transition duration-800 ease-in-out">
               <span class="top lines  bg-gray-500 dark:bg-amber-50"></span>
               <span class="left lines bg-gray-500 dark:bg-amber-50"></span>
               <span class="bottom lines bg-gray-500 dark:bg-amber-50"></span>
@@ -133,28 +133,58 @@ async function submit(e: Event) {
 
     <section id="References" class="flex justify-center">
 
-    <div id="References1" class="m-4 w-70 sm:w-75 hover:scale-110">
+    
+    <div id="References1" class="m-4 w-70 sm:w-75 hover:scale-110 transition duration-800 ease-in-out">
+        <div class="flex flex-col 2 border-b-amber-10 border-1 rounded-3xl">
+          <div class="flex flex-col p-2 gap-3 border-b-amber-10 border-1 rounded-3xl">
+              <h3 class="text-3xl">NBPA</h3>
+              <div>
+                  <p>Dave Bokil</p>
+                  <p>Director of Product </p>
+                  <a href="https://www.linkedin.com/in/davebokil/">
+                    <Icon name="mingcute:linkedin-line" size="30" />
+                  </a>
+                  <a href="mailto:david.bokil@nbpa.com">
+                    <Icon name="lets-icons:e-mail" size="30" />
+                  </a>
+              </div>
+
+              <div>
+                  <p>Kevin Cox</p>
+                  <p>Full-Stack Developer</p>
+                  <a href="https://www.linkedin.com/in/kevincox0427/">
+                    <Icon name="mingcute:linkedin-line" size="30" />
+                  </a>
+                  <a href="mailto:kevin.cox@nbpa.com">
+                    <Icon name="lets-icons:e-mail" size="30" />
+                  </a>
+              </div>
+          </div>
+        </div>
+    </div>
+
+    <div id="References2" class="m-4 w-70 sm:w-75 hover:scale-110 transition duration-800 ease-in-out">
       <div class="flex flex-col 2 border-b-amber-10 border-1 rounded-3xl">
         <div class="flex flex-col p-2 gap-3 border-b-amber-10 border-1 rounded-3xl">
-            <h3 class="text-3xl">NBPA</h3>
+            <h3 class="text-3xl">Grambling State</h3>
             <div>
-                <p class="text-bold">Dave Bokil</p>
-                <p>Senior Manager at the NBPA</p>
-                <a href="https://nuxt.com">
+                <p class="text-bold">Ebony Peterson</p>
+                <p> Retention Specialist </p>
+                <a href="https://www.linkedin.com/in/pete38572/">
                   <Icon name="mingcute:linkedin-line" size="30" />
                 </a>
-                <a href="https://nuxt.com">
+                <a href="mailto:petersone@gram.edu">
                   <Icon name="lets-icons:e-mail" size="30" />
                 </a>
             </div>
 
              <div>
-                <p>Kevin Cox</p>
-                <p>Senior Manager at the NBPA</p>
-                <a href="https://nuxt.com">
+                <p>Bassidy Dembele</p>
+                <p>Associate Professor</p>
+                <a href="https://www.linkedin.com/in/bassidy-dembele">
                   <Icon name="mingcute:linkedin-line" size="30" />
                 </a>
-                <a href="https://nuxt.com">
+                <a href="mailto:dembeleb@gram.edu">
                   <Icon name="lets-icons:e-mail" size="30" />
                 </a>
             </div>
@@ -165,34 +195,6 @@ async function submit(e: Event) {
       </div>
     </div>
 
-    <div id="References2" class="m-4 w-70 sm:w-75 hover:scale-110">
-        <div class="flex flex-col 2 border-b-amber-10 border-1 rounded-3xl">
-          <div class="flex flex-col p-2 gap-3 border-b-amber-10 border-1 rounded-3xl">
-              <h3 class="text-3xl">NBPA</h3>
-              <div>
-                  <p>Dave Bokil</p>
-                  <p>Senior Manager at the NBPA</p>
-                  <a href="https://nuxt.com">
-                    <Icon name="mingcute:linkedin-line" size="30" />
-                  </a>
-                  <a href="https://nuxt.com">
-                    <Icon name="lets-icons:e-mail" size="30" />
-                  </a>
-              </div>
-
-              <div>
-                  <p>Kevin Cox</p>
-                  <p>Senior Manager at the NBPA</p>
-                  <a href="https://nuxt.com">
-                    <Icon name="mingcute:linkedin-line" size="30" />
-                  </a>
-                  <a href="https://nuxt.com">
-                    <Icon name="lets-icons:e-mail" size="30" />
-                  </a>
-              </div>
-          </div>
-        </div>
-    </div>
 
 
     </section>

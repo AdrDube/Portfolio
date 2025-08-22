@@ -15,7 +15,7 @@ onMounted(async () => {
 
     infCarousel.style.animation = "move 40s linear infinite";
     }
-}); 
+});
 
 </script>
  

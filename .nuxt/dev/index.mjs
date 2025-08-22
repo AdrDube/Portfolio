@@ -578,15 +578,48 @@ const cachedEventHandler = defineCachedEventHandler;
 
 const inlineAppConfig = {
   "nuxt": {},
+  "ui": {
+    "colors": {
+      "primary": "green",
+      "secondary": "blue",
+      "success": "green",
+      "info": "blue",
+      "warning": "yellow",
+      "error": "red",
+      "neutral": "slate"
+    },
+    "icons": {
+      "arrowLeft": "i-lucide-arrow-left",
+      "arrowRight": "i-lucide-arrow-right",
+      "check": "i-lucide-check",
+      "chevronDoubleLeft": "i-lucide-chevrons-left",
+      "chevronDoubleRight": "i-lucide-chevrons-right",
+      "chevronDown": "i-lucide-chevron-down",
+      "chevronLeft": "i-lucide-chevron-left",
+      "chevronRight": "i-lucide-chevron-right",
+      "chevronUp": "i-lucide-chevron-up",
+      "close": "i-lucide-x",
+      "ellipsis": "i-lucide-ellipsis",
+      "external": "i-lucide-arrow-up-right",
+      "folder": "i-lucide-folder",
+      "folderOpen": "i-lucide-folder-open",
+      "loading": "i-lucide-loader-circle",
+      "minus": "i-lucide-minus",
+      "plus": "i-lucide-plus",
+      "search": "i-lucide-search"
+    }
+  },
   "icon": {
     "provider": "server",
     "class": "",
+    "size": "1em",
     "aliases": {},
     "iconifyApiEndpoint": "https://api.iconify.design",
     "localApiEndpoint": "/api/_nuxt_icon",
     "fallbackToApi": true,
     "cssSelectorPrefix": "i-",
     "cssWherePseudo": true,
+    "cssLayer": "components",
     "mode": "css",
     "attrs": {
       "aria-hidden": true
@@ -771,37 +804,6 @@ const inlineAppConfig = {
       "zondicons"
     ],
     "fetchTimeout": 1500
-  },
-  "ui": {
-    "colors": {
-      "primary": "green",
-      "secondary": "blue",
-      "success": "green",
-      "info": "blue",
-      "warning": "yellow",
-      "error": "red",
-      "neutral": "slate"
-    },
-    "icons": {
-      "arrowLeft": "i-lucide-arrow-left",
-      "arrowRight": "i-lucide-arrow-right",
-      "check": "i-lucide-check",
-      "chevronDoubleLeft": "i-lucide-chevrons-left",
-      "chevronDoubleRight": "i-lucide-chevrons-right",
-      "chevronDown": "i-lucide-chevron-down",
-      "chevronLeft": "i-lucide-chevron-left",
-      "chevronRight": "i-lucide-chevron-right",
-      "chevronUp": "i-lucide-chevron-up",
-      "close": "i-lucide-x",
-      "ellipsis": "i-lucide-ellipsis",
-      "external": "i-lucide-arrow-up-right",
-      "folder": "i-lucide-folder",
-      "folderOpen": "i-lucide-folder-open",
-      "loading": "i-lucide-loader-circle",
-      "minus": "i-lucide-minus",
-      "plus": "i-lucide-plus",
-      "search": "i-lucide-search"
-    }
   }
 };
 

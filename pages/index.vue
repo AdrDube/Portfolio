@@ -104,13 +104,13 @@ onMounted(async () => {
 
         <div class="flex gap-5">
           <a href="https://nuxt.com">
-            <button class="outline flex border-2 rounded-2xl p-2 items-center relative hover:scale-105">
+            <button class="outline flex border-2 rounded-2xl p-2 items-center relative hover:scale-110 transition duration-600 ease-in-out">
               Click here for resume
             </button>
           </a>
 
           <a href="https://calendar.app.google/Np9dHHWUCRPC2uVS8">
-            <button class="outline flex border-2 rounded-2xl p-2 items-center relative hover:scale-105">
+            <button class="outline flex border-2 rounded-2xl p-2 items-center relative hover:scale-110 transition duration-600 ease-in-out">
               Schedule a meeting
             </button>
           </a>
@@ -183,12 +183,12 @@ onMounted(async () => {
       <p class="text-5xl">My Journey So Far</p>
 
       <div class="flex flex-col sm:flex-row justify-center items-center gap-10 p-2">
-            <div class="flex flex-col 2 border-b-amber-10 border-1 rounded-3xl w-4/5 sm:w-80 px-3 py-2 h-50 hover:scale-105 transition duration-700 ease-in-out">
+            <div class="flex flex-col 2 border-b-amber-10 border-1 rounded-3xl w-4/5 sm:w-80 px-3 py-2 h-50 hover:scale-107 transition duration-800 ease-in-out">
                         <Icon class="self-center" name="arcticons:autotools" size="80"/>
                         <h3 class="t-semibold">Experience</h3>
                         <p class="text-xl">2+ years <br> Software Development</p>
             </div>
-            <div class="flex flex-col 2 border-b-amber-10 border-1 rounded-3xl w-4/5 sm:w-80 px-3 py-2 h-50 hover:scale-105 transition duration-700 ease-in-out">
+            <div class="flex flex-col 2 border-b-amber-10 border-1 rounded-3xl w-4/5 sm:w-80 px-3 py-2 h-50 hover:scale-107 transition duration-800 ease-in-out">
                         <Icon class="self-center" name="arcticons:folder-school" size="80"/>
                         <h3 class="t-semibold">Education</h3>
                         <p class="text-xl">B.Sc Bachelors Degree (2027) <br>Computer Science & Cloud Computing</p>
@@ -204,18 +204,18 @@ onMounted(async () => {
 
             <div class="flex flex-col items-end py-5  text-right">
               <a href="https://nbpa.com/">
-                <p class="t-light">
+                <p class="t-light hover:scale-107 transition duration-800 ease-in-out">
                   2025 — <span class= "text-4xl dark:text-red-50 text-red-100  font-semibold underline">NBPA</span>
                 </p>
               </a>
 
                <a href="">
-                  <p class="t-light">
+                  <p class="t-light hover:scale-107 transition duration-800 ease-in-out">
                     2024 — <span class=" dark:text-purple-100 text-purple-200  text-4xl font-semibold underline">CIA Captone</span>
                   </p>  
               </a>
               <a href="https://www.gram.edu/academics/universitycollege/retention/index.php">
-                  <p class="t-light">
+                  <p class="t-light hover:scale-107 transition duration-800 ease-in-out">
                     2024 — <span class="dark:text-yellow-50 text-yellow-100 text-4xl font-semibold underline">Grambling State</span>
                   </p>
               </a>

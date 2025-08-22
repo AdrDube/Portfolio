@@ -3,7 +3,7 @@
 </script>
 
 <template>
-<body class="min-h-screen dark:bg-gray-950">
+<section class="min-h-screen dark:bg-gray-950">
   <div class="flex flex-col min-h-screen xl:w-6xl xl:justify-self-center xl:border-x-[0.25px] px-5">
     <main class="flex flex-col flex-grow">
         <Navbar />
@@ -35,7 +35,7 @@
 
     
   </div>
-</body>
+</section>
 </template>
 
 
