@@ -32,11 +32,11 @@ onMounted(() => {
 
           <div class="sm:absolute inset-0 flex justify-end">
             <div class="flex lg:relative sm:w-1/2 lg:w-[468px] lg:h-[600px] -mask-linear-45 mask-linear-from-35% mask-linear-to-90%">
-              <img 
+              <!-- <img 
                 id = "main_image"
-                src="/honors.jpg"
+                src="https://play-lh.googleusercontent.com/qwn15z9NzlVMN-x7_rqHnnqZ0jsJ4e1RomqdRQIJw39NmnbDX4S7iWMuSNPPcB_mc0Q"
                 class="w-full h-full object-cover rounded-2xl" 
-              />
+              /> -->
               <div class="absolute inset-0 bg-gradient-to-br from-black to-transparent  to-10%"> </div>
             </div>
           </div>
