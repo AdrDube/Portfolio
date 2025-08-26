@@ -21,16 +21,16 @@
       </div>  
 
       <div class="flex space-x-1">
-        <a href="https://nuxt.com">
+        <a href="https://github.com/AdrDube">
           <Icon name="mdi:github" size="25px" />
         </a>
-        <a href="https://nuxt.com">
+        <a href="tel:6502483544">
           <Icon name="line-md:phone-call-loop" size="25px" />
         </a>
-        <a href="https://nuxt.com">
+        <a href="https://www.linkedin.com/in/adrieltdube/">
           <Icon name="mingcute:linkedin-line" size="25px" />
         </a>
-        <a href="https://nuxt.com">
+        <a href="mailto:adrtdube@gmail.com">
           <Icon name="lets-icons:e-mail" size="25px" />
         </a>
       </div>

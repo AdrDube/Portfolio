@@ -73,8 +73,8 @@ const filter = (lang: string) => {
           </div>
 
           <div class="flex justify-self-center gap-5 pt-2">
-    
-              <a href="https://github.com/AdrDube/GSU-Registration">
+
+              <a href="https://youtu.be/5m8NiNu2Mf4?si=NRAl9Wrk3Y_pPTIQ">
                 <button class="cursor-pointer outline rounded-2xl hover:scale-105  w-35 h-15">
                     <span class="top lines  bg-gray-500 dark:bg-amber-50"></span>
                     <span class="left lines bg-gray-500 dark:bg-amber-50"></span>
@@ -87,8 +87,7 @@ const filter = (lang: string) => {
               
               </a>
 
-
-              <a href="https://youtu.be/5m8NiNu2Mf4?si=NRAl9Wrk3Y_pPTIQ">
+                <a href="https://github.com/AdrDube/GSU-Registration">  
                 <button class="cursor-pointer outline rounded-2xl hover:scale-105 w-35 h-15">
                     <span class="top lines  bg-gray-500 dark:bg-amber-50"></span>
                     <span class="left lines bg-gray-500 dark:bg-amber-50"></span>
@@ -253,7 +252,7 @@ const filter = (lang: string) => {
 
             </a>
 
-            <a href="https://github.com/AdrDube/GSU-Registration">
+            <a href="https://github.com/AdrDube/AdrDube.github.io">
               <button class="cursor-pointer outline rounded-2xl  w-35 h-15 hover:scale-105">
                   <span class="top lines  bg-gray-500 dark:bg-amber-50"></span>
                   <span class="left lines bg-gray-500 dark:bg-amber-50"></span>

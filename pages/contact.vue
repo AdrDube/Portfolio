@@ -49,16 +49,16 @@ async function submit(e: Event) {
 
 
       <div class="flex gap-4 min-w-full justify-center">
-        <a href="https://nuxt.com">
+        <a href="https://github.com/AdrDube">
           <Icon name="mdi:github" size="70" />
         </a>
-        <a href="https://nuxt.com">
+        <a href="tel:6502483544">
           <Icon name="line-md:phone-call-loop" size="70" />
         </a>
-        <a href="https://nuxt.com">
+        <a href="https://www.linkedin.com/in/adrieltdube/">
           <Icon name="mingcute:linkedin-line" size="70" />
         </a>
-        <a href="https://nuxt.com">
+        <a href="mailto:adrtdube@gmail.com">
           <Icon name="lets-icons:e-mail" size="70" />
         </a>
       </div>

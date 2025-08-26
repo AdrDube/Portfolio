@@ -114,15 +114,15 @@ onMounted(async () => {
           </button>
 
           <div class="gap-x-4 inline-flex mt-4">
-              <a href="https://nuxt.com">
+              <a href="https://github.com/AdrDube">
                 <Icon name="mdi:github" size="25px" />
               </a>
 
-              <a href="https://nuxt.com">
+              <a href="https://www.linkedin.com/in/adrieltdube/">
                 <Icon name="mingcute:linkedin-line" size="25px" />
               </a>
 
-              <a href="https://nuxt.com">
+              <a href="mailto:adrtdube@gmail.com">
                 <Icon name="lets-icons:e-mail" size="25px" />
               </a>
           </div>
@@ -175,48 +175,49 @@ onMounted(async () => {
 
   <div id="stack" class="flex flex-col items-center w-full ">
     <div class="flex flex-wrap items-center gap-x-6">
-              <a href="https://nuxt.com">
-               <Icon name="gravity-ui:logo-python" size="65"/>
+             
+              <a href="https://www.python.org/">
+               <Icon class="hover:scale-110 transition duration-700 ease-in-out" name="gravity-ui:logo-python" size="65"/>
+              </a>
+
+              <a href="https://developer.apple.com/swift/">
+                <Icon class="hover:scale-110 transition duration-700 ease-in-out" name="mdi:language-swift" size="65" />
+              </a>
+
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+                <Icon class="hover:scale-110 transition duration-700 ease-in-out" name="ph:file-html-thin" size="65"/>
+              </a>
+
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+                <Icon class="hover:scale-110 transition duration-700 ease-in-out" name="ph:file-css-thin" size="65" />
+              </a>
+
+              <a href="https://tailwindcss.com/">
+                <Icon class="hover:scale-110 transition duration-700 ease-in-out" name="lineicons:tailwindcss" size="65" />
+              </a>
+
+              <a href="https://aws.amazon.com/">
+                <Icon class="hover:scale-110 transition duration-700 ease-in-out" name="fa6-brands:aws" size="60"/>
+              </a>
+
+              <a href="https://www.postgresql.org/">
+                <Icon class="hover:scale-110 transition duration-700 ease-in-out" name="simple-icons:postgresql" size="65"/>
+              </a>
+
+              <a href="https://www.mongodb.com/">
+                <Icon class="hover:scale-110 transition duration-700 ease-in-out" name="devicon-plain:mongodb-wordmark" size="65" />
+              </a>
+
+              <a href="https://www.mysql.com/">
+                <Icon class="hover:scale-110 transition duration-700 ease-in-out" name="lineicons:mysql" size="65" />
+              </a>
+
+              <a href="https://vuejs.org/">
+                <Icon class="hover:scale-110 transition duration-700 ease-in-out" name="devicon-plain:vuejs-wordmark" size="65"/>
               </a>
 
               <a href="https://nuxt.com">
-                <Icon name="mdi:language-swift" size="65" />
-              </a>
-
-              <a href="https://nuxt.com">
-                <Icon name="ph:file-html-thin" size="65"/>
-              </a>
-
-              <a href="https://nuxt.com">
-               <Icon name="ph:file-css-thin" size="65" />
-              </a>
-
-              <a href="https://nuxt.com">
-               <Icon name="lineicons:tailwindcss"size="65" />
-              </a>
-
-              <a href="https://nuxt.com">
-                <Icon name="fa6-brands:aws" size="60"/>
-              </a>
-
-              <a href="https://nuxt.com">
-                <Icon name="simple-icons:postgresql" size="65"/>
-              </a>
-
-              <a href="https://nuxt.com">
-                <Icon name="devicon-plain:mongodb-wordmark" size="65" />
-              </a>
-
-              <a href="https://nuxt.com">
-                <Icon name="lineicons:mysql" size="65" />
-              </a>            
-
-              <a href="https://nuxt.com">
-                <Icon name="devicon-plain:vuejs-wordmark" size="65"/>
-              </a>
-
-              <a href="https://nuxt.com">
-                 <Icon name="devicon-plain:nuxtjs-wordmark" size="120"/>
+                <Icon class="hover:scale-110 transition duration-700 ease-in-out" name="devicon-plain:nuxtjs-wordmark" size="120"/>
               </a>
     </div>
   </div>
