@@ -1,16 +1,18 @@
 
 <script setup lang="ts">
-import { SpeedInsights } from '@vercel/speed-insights/vue';
+
 </script>
 
 
 <template>
 <section class="min-h-screen dark:bg-gray-950">
-  <SpeedInsights />
   <div class="flex flex-col min-h-screen xl:w-6xl xl:justify-self-center xl:border-x-[0.25px] px-5">
-    <main class="flex flex-col flex-grow">
-        <Navbar />
-        <NuxtPage />
+    <main
+      class="flex flex-col flex-grow"
+
+    >
+      <Navbar />
+      <NuxtPage/>
     </main>
     
     <footer class="flex justify-between items-center w-full p-7">

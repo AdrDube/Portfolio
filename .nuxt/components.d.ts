@@ -15,6 +15,7 @@ interface _GlobalComponents {
       'Carousel': typeof import("../components/carousel.vue")['default']
     'CoinImages': typeof import("../components/coinImages.vue")['default']
     'Navbar': typeof import("../components/navbar.vue")['default']
+    'Slider': typeof import("../components/slider.vue")['default']
     'UAccordion': typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Accordion.vue")['default']
     'UAlert': typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Alert.vue")['default']
     'UApp': typeof import("../node_modules/@nuxt/ui/dist/runtime/components/App.vue")['default']
@@ -102,6 +103,7 @@ interface _GlobalComponents {
       'LazyCarousel': LazyComponent<typeof import("../components/carousel.vue")['default']>
     'LazyCoinImages': LazyComponent<typeof import("../components/coinImages.vue")['default']>
     'LazyNavbar': LazyComponent<typeof import("../components/navbar.vue")['default']>
+    'LazySlider': LazyComponent<typeof import("../components/slider.vue")['default']>
     'LazyUAccordion': LazyComponent<typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Accordion.vue")['default']>
     'LazyUAlert': LazyComponent<typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Alert.vue")['default']>
     'LazyUApp': LazyComponent<typeof import("../node_modules/@nuxt/ui/dist/runtime/components/App.vue")['default']>
@@ -195,6 +197,7 @@ declare module 'vue' {
 export const Carousel: typeof import("../components/carousel.vue")['default']
 export const CoinImages: typeof import("../components/coinImages.vue")['default']
 export const Navbar: typeof import("../components/navbar.vue")['default']
+export const Slider: typeof import("../components/slider.vue")['default']
 export const UAccordion: typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Accordion.vue")['default']
 export const UAlert: typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Alert.vue")['default']
 export const UApp: typeof import("../node_modules/@nuxt/ui/dist/runtime/components/App.vue")['default']
@@ -282,6 +285,7 @@ export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/
 export const LazyCarousel: LazyComponent<typeof import("../components/carousel.vue")['default']>
 export const LazyCoinImages: LazyComponent<typeof import("../components/coinImages.vue")['default']>
 export const LazyNavbar: LazyComponent<typeof import("../components/navbar.vue")['default']>
+export const LazySlider: LazyComponent<typeof import("../components/slider.vue")['default']>
 export const LazyUAccordion: LazyComponent<typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Accordion.vue")['default']>
 export const LazyUAlert: LazyComponent<typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Alert.vue")['default']>
 export const LazyUApp: LazyComponent<typeof import("../node_modules/@nuxt/ui/dist/runtime/components/App.vue")['default']>

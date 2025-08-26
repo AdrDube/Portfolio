@@ -7,9 +7,6 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   icon: {
-    size: '1em', // Default icon size
-    class: '',   // Optional global class
-    // ✅ Limit server bundle to only needed collections
     serverBundle: {
       collections: [
         'gravity-ui',

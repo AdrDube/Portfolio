@@ -128,7 +128,7 @@ async function submit(e: Event) {
 
           <div class="flex justify-center mt-10">
             <button type="submit"
-              class="rounded-md font-medium inline-flex items-center disabled:cursor-not-allowed aria-disabled:cursor-not-allowed disabled:opacity-75 aria-disabled:opacity-75 transition-colors cursor-pointer px-2.5 py-1.5 text-sm gap-1.5 w-full justify-center text-inverted bg-inverted hover:bg-inverted/90 disabled:bg-inverted aria-disabled:bg-inverted focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-inverted">
+              class="rounded-md font-medium inline-flex items-center transition-colors cursor-pointer px-2.5 py-1.5 text-sm gap-1.5 w-full justify-center text-inverted bg-inverted hover:bg-inverted/90 focus-visible:outline-2">
               Send
             </button>
           </div>

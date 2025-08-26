@@ -33,16 +33,16 @@ onMounted(async () => {
   <div>
 
   <div class ="coins flex items-center relative w-40 h-40" ref="coins">
-    <a href="https://images3.boardingschoolreview.com/photo/593/IMG-Academy-6r5kz9j4u144kso44sw8800k0-1122.webp">
+    <a href= "https://nbpa.com/">
       <img class="rounded-full" src="https://cosmic-s3.imgix.net/d332de50-0b10-11ea-95fe-01afbd7f5f3b-nbpa.png" alt="Random Image 1" />
     </a>
 
-    <a href="https://nbpa.com/">
+    <a href= "https://www.gram.edu/">
       <img class="rounded-full w-full h-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVJk75I53dGJ9D4C8HArRJTeNWqZY63rsrrpggmW0tUsM9f06uf_U_nSZ4KoNblGEzauc&usqp=CAU" 
            alt="Random Image 2" />
     </a>
 
-    <a href="#">
+    <a href= "https://www.cia.gov/">
       <img class="rounded-full w-full h-full" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Seal_of_the_Central_Intelligence_Agency.svg/2048px-Seal_of_the_Central_Intelligence_Agency.svg.png" 
            alt="Random Image 3" />
     </a>

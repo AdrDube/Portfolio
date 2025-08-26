@@ -612,7 +612,6 @@ const inlineAppConfig = {
   "icon": {
     "provider": "server",
     "class": "",
-    "size": "1em",
     "aliases": {},
     "iconifyApiEndpoint": "https://api.iconify.design",
     "localApiEndpoint": "/api/_nuxt_icon",

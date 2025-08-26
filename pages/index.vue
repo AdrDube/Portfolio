@@ -1,10 +1,19 @@
 <script setup>
 
+const loaded = ref(false)
+
+onMounted(() => {
+  setTimeout(() => {
+    loaded.value = true
+  }, 100)
+})
+
+
 const titles = [
-  "Software Engineer",
-  "Web Developer",
-  "Tech Enthusiast",
-  "Open Source Contributor",
+  "Software Engineer.",
+  "Web Developer.",
+  "Tech Enthusiast.",
+  "Open Source Contributor.",
   "Thanks for stopping by..."
 ]
 
@@ -18,7 +27,16 @@ function sleep(ms) {
 }
 
 onMounted(async () => {
-  for (let i = 0; i <= intro.length; i++) {
+  await sleep(2000)
+
+  for (let i = 0; i <= 3; i++) {
+      hello.value = intro.slice(0, i)
+      await sleep(200)
+  }
+
+  await sleep(800)
+
+  for (let i = 3; i <= intro.length; i++) {
       hello.value = intro.slice(0, i)
       await sleep(100)
   }
@@ -30,7 +48,7 @@ onMounted(async () => {
     // Type in
     for (let i = 0; i <= current.length; i++) {
       title.value = current.slice(0, i)
-      await sleep(150)
+      await sleep(100)
     }
 
     await sleep(2000) // pause after full title
@@ -47,13 +65,20 @@ onMounted(async () => {
    
   }
 })
+
+
 </script>
 
 <template>
 
-<div class="flex flex-col gap-10">
+<div 
+    class="flex flex-col gap-10"
+    :class="['transition-opacity duration-3000', loaded ? 'opacity-100' : 'opacity-0']"
+    >
+  <section 
+    class="flex flex-col sm:flex-row sm:items-center sm:justify-between px-5 text-center sm:text-left"
 
-  <section class="flex flex-col sm:flex-row sm:items-center sm:justify-between px-5 text-center sm:text-left">
+  >
 
 
     <div class="sm:flex-1 sm:order-1 order-2">
@@ -65,7 +90,7 @@ onMounted(async () => {
     <div class="flex justify-center sm:justify-center sm:flex-1 order-1 sm:order-2">
       <img 
         class="rounded-b-full w-80 h-80 object-cover" 
-        src="https://waterlust.com/cdn/shop/collections/SB_BG_016.jpg" 
+        src="/main.png" 
         alt="Adriel Dube">
     </div>
 
@@ -120,9 +145,28 @@ onMounted(async () => {
        
   </div>
 
+    <section class="flex flex-col items-center gap-10">
 
-  <div class="flex flex-col gap-10 items-center w-full  text-5xl">
-    View Projects
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-10 p-2">
+            <div class="flex flex-col 2 border-b-amber-10 border-1 rounded-3xl w-4/5 sm:w-80 px-3 py-2 h-50 hover:scale-107 transition duration-800 ease-in-out">
+                        <Icon class="self-center" name="arcticons:autotools" size="80"/>
+                        <h3 class="t-semibold">Experience</h3>
+                        <p class="text-xl">2+ years Software Development</p>
+                        <p class="text-xl">Internship Experience</p>
+                        <p class="text-xl">1 Capstone Project</p>
+            </div>
+            <div class="flex flex-col 2 border-b-amber-10 border-1 rounded-3xl w-4/5 sm:w-80 px-3 py-2 h-50 hover:scale-107 transition duration-800 ease-in-out">
+                        <Icon class="self-center" name="arcticons:folder-school" size="80"/>
+                        <h3 class="t-semibold">Education</h3>
+                        <p class="text-xl">B.Sc Bachelors Degree (2027) <br>Computer Science & Cloud Computing</p>
+            </div>
+       </div>
+    </section>
+     
+
+
+  <div class="flex flex-col gap-10 items-center w-full">
+    <h3 class="text-5xl">My Projects</h3>
     <a href="/projects" >
       <Carousel />
     </a>
@@ -179,21 +223,6 @@ onMounted(async () => {
 
  
   <section class="flex flex-col items-center gap-10">
-      
-      <p class="text-5xl">My Journey So Far</p>
-
-      <div class="flex flex-col sm:flex-row justify-center items-center gap-10 p-2">
-            <div class="flex flex-col 2 border-b-amber-10 border-1 rounded-3xl w-4/5 sm:w-80 px-3 py-2 h-50 hover:scale-107 transition duration-800 ease-in-out">
-                        <Icon class="self-center" name="arcticons:autotools" size="80"/>
-                        <h3 class="t-semibold">Experience</h3>
-                        <p class="text-xl">2+ years <br> Software Development</p>
-            </div>
-            <div class="flex flex-col 2 border-b-amber-10 border-1 rounded-3xl w-4/5 sm:w-80 px-3 py-2 h-50 hover:scale-107 transition duration-800 ease-in-out">
-                        <Icon class="self-center" name="arcticons:folder-school" size="80"/>
-                        <h3 class="t-semibold">Education</h3>
-                        <p class="text-xl">B.Sc Bachelors Degree (2027) <br>Computer Science & Cloud Computing</p>
-            </div>
-       </div>
 
        <p class="text-5xl">Experiences</p>
 

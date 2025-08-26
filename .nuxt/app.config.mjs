@@ -38,7 +38,6 @@ const inlineConfig = {
   "icon": {
     "provider": "server",
     "class": "",
-    "size": "1em",
     "aliases": {},
     "iconifyApiEndpoint": "https://api.iconify.design",
     "localApiEndpoint": "/api/_nuxt_icon",
@@ -227,7 +226,8 @@ const inlineConfig = {
       "wi",
       "wpf",
       "zmdi",
-      "zondicons"
+      "zondicons",
+      "lineicons"
     ],
     "fetchTimeout": 1500
   }
