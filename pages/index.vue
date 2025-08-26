@@ -29,16 +29,16 @@ function sleep(ms) {
 onMounted(async () => {
   await sleep(2000)
 
-  for (let i = 0; i <= 3; i++) {
+  for (let i = 0; i <= 4; i++) {
       hello.value = intro.slice(0, i)
       await sleep(200)
   }
 
   await sleep(800)
 
-  for (let i = 3; i <= intro.length; i++) {
+  for (let i = 4; i <= intro.length; i++) {
       hello.value = intro.slice(0, i)
-      await sleep(100)
+      await sleep(140)
   }
 
   await sleep(1000)
@@ -48,10 +48,10 @@ onMounted(async () => {
     // Type in
     for (let i = 0; i <= current.length; i++) {
       title.value = current.slice(0, i)
-      await sleep(100)
+      await sleep(150)
     }
 
-    await sleep(2000) // pause after full title
+    await sleep(3000) // pause after full title
     index = index + 1
 
     if (index < titles.length){
@@ -128,7 +128,7 @@ onMounted(async () => {
           </div>
 
         <div class="flex gap-5">
-          <a href="https://nuxt.com">
+          <a href="https://jumpshare.com/share/8cq2n8G33CWuhaHTFEyQ">
             <button class="outline flex border-2 rounded-2xl p-2 items-center relative hover:scale-110 transition duration-600 ease-in-out">
               Click here for resume
             </button>

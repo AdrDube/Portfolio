@@ -3,6 +3,8 @@
 
 const colorMode = useColorMode()
 
+colorMode.preference = 'dark'
+
 const toggleTheme = () => {
   console.log(colorMode.preference)
   colorMode.preference = colorMode.preference === 'light' ? 'dark' : 'light'

@@ -15,8 +15,8 @@ const languages = ref(["All",
   "AWS", "Flask", "MySQL", "MongoDB", "Swift", "Vue.js", "Nuxt.js", "UIKit", "Firebase"
 ]);
 
-const project1 = ref(["Python", "HTML", "CSS", "JavaScript", "AWS", "MySQL"]);
-const project2 = ref(["Swift", "UIKit", "Tailwind", "Firebase"]);
+const project1 = ref(["Python", "Flask", "AWS", "MySQL", "HTML", "CSS", "JavaScript"]);
+const project2 = ref(["Swift", "UIKit", "Firebase"]);
 const project3 = ref(["Vue.js", "Nuxt.js", "HTML", "CSS", "JavaScript", "Tailwind"]);
 const project4 = ref(["HTML", "CSS", "Bootstrap"]);
 
@@ -59,7 +59,7 @@ const filter = (lang: string) => {
 
 
             <div class="overflow-hidden">
-              <img class="h-70 w-full hover:scale-105 rounded-xl" src="/class.png">
+              <img class="h-70 w-full hover:scale-105 rounded-xl" src="/gsureg.png">
             </div>
 
             <div class="flex flex-col p-2 gap-3">
@@ -68,12 +68,11 @@ const filter = (lang: string) => {
                 <button v-for="lang of project1" class="rounded-3xl p-1 border-1 min-w-[80px]"> {{ lang }} </button>
               </div>
 
-              <p>The revolution of registration at Grambling State University!</p>
+              <p>The ultimate web app designed to simplify course selection and registration at Grambling State University.</p>
             </div>
           </div>
 
           <div class="flex justify-self-center gap-5 pt-2">
-
     
               <a href="https://github.com/AdrDube/GSU-Registration">
                 <button class="cursor-pointer outline rounded-2xl hover:scale-105  w-35 h-15">
@@ -119,7 +118,7 @@ const filter = (lang: string) => {
               <div class="flex flex-wrap gap-2.5 tech-stack">
                 <button v-for="lang of project3" class="rounded-3xl p-1 border-1 min-w-[80px]"> {{ lang }} </button>
               </div>
-              <p>My current Portfolio built from my experience during my time at the NBPA</p>
+              <p>My current portfolio built from my experience during my time at the NBPA</p>
 
             </div>
 
@@ -141,7 +140,7 @@ const filter = (lang: string) => {
               </a>
 
             
-              <a href="https://github.com/AdrDube/GSU-Registration">
+              <a href="https://github.com/AdrDube/Portfolio">
                 <button class="cursor-pointer outline rounded-2xl hover:scale-105 w-35 h-15">
                     <span class="top lines  bg-gray-500 dark:bg-amber-50"></span>
                     <span class="left lines bg-gray-500 dark:bg-amber-50"></span>
@@ -188,7 +187,7 @@ const filter = (lang: string) => {
           </div>
 
           <div class="flex justify-self-center gap-5 py-2">
-              <a href="https://github.com/AdrDube/Classync">
+              <a href="https://drive.google.com/file/d/1SrZVmEqOnvEH3af8J0s7yjYr2p57tWI1/view?usp=share_link">
                 <button class="cursor-pointer outline rounded-2xl hover:scale-105  w-35 h-15">
                     <span class="top lines  bg-gray-500 dark:bg-amber-50"></span>
                     <span class="left lines bg-gray-500 dark:bg-amber-50"></span>
@@ -199,14 +198,14 @@ const filter = (lang: string) => {
                 </button>
               </a>
             
-              <a href="https://github.com/AdrDube/GSU-Registration">
+              <a href="https://github.com/AdrDube/Classync">
                 <button class="cursor-pointer outline rounded-2xl hover:scale-105 w-35 h-15">
                     <span class="top lines  bg-gray-500 dark:bg-amber-50"></span>
                     <span class="left lines bg-gray-500 dark:bg-amber-50"></span>
                     <span class="bottom lines bg-gray-500 dark:bg-amber-50"></span>
                     <span class="right lines bg-gray-500 dark:bg-amber-50"> </span>
 
-                    <!-- Icon -->
+ 
                     <Icon name="octicon:mark-github-16" size="50" />
                 </button>
               

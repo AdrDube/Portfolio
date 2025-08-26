@@ -33,6 +33,7 @@ export { extractShortcuts, defineShortcuts } from '../node_modules/@nuxt/ui/dist
 export { avatarGroupInjectionKey, useAvatarGroup } from '../node_modules/@nuxt/ui/dist/runtime/composables/useAvatarGroup';
 export { buttonGroupInjectionKey, useButtonGroup } from '../node_modules/@nuxt/ui/dist/runtime/composables/useButtonGroup';
 export { useComponentIcons } from '../node_modules/@nuxt/ui/dist/runtime/composables/useComponentIcons';
+export { useFileUpload } from '../node_modules/@nuxt/ui/dist/runtime/composables/useFileUpload';
 export { formOptionsInjectionKey, formBusInjectionKey, formFieldInjectionKey, inputIdInjectionKey, formInputsInjectionKey, formLoadingInjectionKey, useFormField } from '../node_modules/@nuxt/ui/dist/runtime/composables/useFormField';
 export { kbdKeysMap, useKbd } from '../node_modules/@nuxt/ui/dist/runtime/composables/useKbd';
 export { localeContextInjectionKey, useLocale } from '../node_modules/@nuxt/ui/dist/runtime/composables/useLocale';

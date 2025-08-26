@@ -13,7 +13,7 @@ onMounted(() => {
 
 <template>
   <div class="py-15 md:px-10"
-    :class="['transition-opacity duration-2500', loaded ? 'opacity-100' : 'opacity-0']">
+    :class="['transition-opacity duration-1500', loaded ? 'opacity-100' : 'opacity-0']">
     <section class="flex flex-col sm:relative w-full sm:h-220 md:h-220 "> 
         <div class="flex">
           <div>
@@ -24,29 +24,30 @@ onMounted(() => {
                 <div class="flex py-12 sm:w-1/2">
                     <p class="text-xl sm:text-2xl font-serif px-6 m-0">
                       I’m currently a student exploring the intersection of technology, design, and storytelling.
-                      I’m drawn to projects that start with a messy whiteboard and evolve through collaboration. Whether I’m writing code, shaping interfaces, or helping define a vision, I care about clarity — not just in what we build, but how we work together.
+                      I’m drawn to projects that start with a messy whiteboard and evolve through collaboration. It's not just in what we build, but how we work together.
+                      If you’re interested in working together or just want to say hi, feel free to reach out!
                     </p>
         
                 </div>
           </div>
 
           <div class="sm:absolute inset-0 flex justify-end">
-            <div class="flex lg:relative sm:w-1/2 lg:w-[468px] lg:h-[600px] -mask-linear-45 mask-linear-from-35% mask-linear-to-90%">
+            <div class="flex lg:relative sm:w-1/2 lg:w-[468px] lg:h-[600px] -mask-linear-45 mask-linear-from-60% mask-linear-to-80%">
               <img 
                 id = "main_image"
                 src="/honors.png"
                 class="w-full h-full object-cover rounded-2xl" 
               />
-              <div class="absolute inset-0 bg-gradient-to-br from-black to-transparent  to-10%"> </div>
+              <div class="absolute inset-0 bg-gradient-to-br from-black to-transparent  to-25%"> </div>
             </div>
           </div>
 
         </div>
 
         <div class="flex sm:absolute inset-0 justify-start lg:justify-center lg:pb-10 self-start sm:self-end z-10">
-          <div class="flex lg:relative h-70 sm:w-1/2  w-100 mask-linear-45 mask-linear-from-35% mask-linear-to-80%">
-            <img class="w-100 h-full object-cover rounded-2xl" src="/grampic.png" alt="Random Image 1">
-            <div class="absolute inset-0 bg-gradient-to-br from-black to-transparent  to-20%"> </div>
+          <div class="flex lg:relative h-70 sm:w-1/2  w-100 mask-linear-45 mask-linear-from-45% mask-linear-to-70%">
+            <img class="w-100 h-full object-cover rounded-2xl" src="/grampic.png">
+            <div class="absolute inset-0 bg-gradient-to-br from-black to-transparent  to-10%"> </div>
           </div>
             
         </div>
@@ -103,7 +104,7 @@ onMounted(() => {
       <details class="cursor-pointer rounded-lg px-3 py-1 w-full">
         <summary class="flex list-none justify-center">
           <div class=" hover:scale-110 text-center transition duration-700 ease-in-out">
-            <Icon name="streamline:global-learning" size="120" />
+          <Icon name="streamline-freehand:collaboration-meeting-team-file" size="120" />
               <p class="text-3xl">For your team <Icon name="iconamoon:arrow-down-2-fill"/></p>
           </div>
         </summary>
@@ -124,15 +125,15 @@ onMounted(() => {
       <details class="cursor-pointer rounded-lg px-3 py-1 md:w-1/3">
         <summary class="flex list-none justify-center">
           <div class=" hover:scale-110 text-center transition duration-700 ease-in-out">
-            <Icon name="fluent:people-team-48-regular" size="120" />
-            <p class="text-3xl">For the Process<Icon name="iconamoon:arrow-down-2-fill"/></p>
+            <Icon name="et:gears" size="110" />
+            <p class="text-3xl">For the Process <Icon name="iconamoon:arrow-down-2-fill"/></p>
           </div>
         </summary>
 
         <div class="flex flex-col md:w-full  w-100 px-6 py-4 gap-4  hover:scale-110 transition duration-700 ease-in-out justify-self-center">
           <div class="flex flex-col p-2 gap-3">
               <p><b>I'll help turn big dreams into daily wins carve clear paths forward.</b></p>
-              <p>Break down big ideas into clear, manageable steps — then execute.</p>
+              <p>I'll reak down big ideas into clear, manageable steps — then execute.</p>
               <p>I believe in building smarter and not harder. I will help you find the right tools and processes to streamline your workflow.</p>
               <p><i>Let's make your vision a reality.</i></p>
           </div>
@@ -143,8 +144,8 @@ onMounted(() => {
       <details class="cursor-pointer rounded-lg px-3 py-1 md:w-1/3">
         <summary class="flex list-none justify-center">
           <div class=" hover:scale-110 text-center transition duration-700 ease-in-out">
-            <Icon name="et:gears" size="120" />
-              <p class="text-3xl">For your users <Icon name="iconamoon:arrow-down-2-fill"/></p>
+              <Icon name="ph:user-check-light" size="110" />
+              <p class="text-3xl">For your users <Icon name="iconamoon:arrow-down-2-fill"/> </p>
           </div>
         </summary>
 
@@ -152,7 +153,7 @@ onMounted(() => {
           <div class="flex flex-col p-2 gap-3">
               <p><b>I'l help design with a specific purpose in mind, not assumptions</b></p>
               <p>I'll ask the hard questions that expose hidden flaws and challenge surface-level thinking.</p>
-              <p>I'll spot UX friction points and edge cases _before_ they become user pain to ensure our design is resilient, intuitive, and fun to use.</p>
+              <p>I'll spot UX friction points and edge cases before they become user pain to ensure our design is resilient, intuitive, and fun to use.</p>
           </div>
         </div>
       </details>
@@ -267,4 +268,7 @@ onMounted(() => {
 
 
 <style></style>
+
+
+
 
