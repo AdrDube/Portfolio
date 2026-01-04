@@ -241,7 +241,7 @@ onMounted(async () => {
 
                <a href="">
                   <p class="t-light hover:scale-107 transition duration-800 ease-in-out">
-                    2024 — <span class=" dark:text-purple-100 text-purple-200  text-4xl font-semibold underline">CIA Captone</span>
+                    2024 — <span class=" dark:text-purple-100 text-purple-200  text-4xl font-semibold underline">CIA Capstone</span>
                   </p>  
               </a>
               <a href="https://www.gram.edu/academics/universitycollege/retention/index.php">

@@ -12,7 +12,7 @@ onMounted(() => {
 
 const languages = ref(["All",
   "Python", "Swift", "JavaScript", "HTML", "CSS", "Tailwind",
-  "AWS", "Flask", "MySQL", "MongoDB", "Swift", "Vue.js", "Nuxt.js", "UIKit", "Firebase"
+  "AWS", "Flask", "MySQL", "Swift", "Vue.js", "Nuxt.js", "UIKit", "Firebase"
 ]);
 
 const project1 = ref(["Python", "Flask", "AWS", "MySQL", "HTML", "CSS", "JavaScript"]);
